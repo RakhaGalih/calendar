@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="dycalendar.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="box">
+            <div class="container">
+                <div id="dycalendar"></div>
+            </div>
+        </div>
+        <div class="contain">
+            <ul>
+                <li><a href="https://www.gamelab.id/dashboard" target="_blank" title="gamelab"><i class="fas fa-dice"></i></a></li>
+                <li><a href="https://siswa.smktelkom-mlg.sch.id/welcome" target="_blank" title="siakad"><i class="fas fa-thumbtack"></i></a></li>
+                <li><a href="https://classroom.google.com/u/1/h" target="_blank" title="classroom"><i class="fas fa-school"></i></a></li>
+                <li><a href="https://mylms.smktelkom-mlg.sch.id/my/" target="_blank" title="LMS"><i class="fas fa-file-signature"></i></a></li>
+                <li><a href="https://web.whatsapp.com/" target="_blank" title="whatsapp web"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+         </div>
+    </section>
+    
+    <script src="dycalendar.js"></script>
+    <script>
+        dycalendar.draw({
+            target: '#dycalendar',
+            type: 'month',
+            dayformat: 'full',
+            monthformat: 'full',
+            highlighttargetdate: true,
+            prevnextbutton: 'show'
+        })
+    </script>
+</body>
+</html>
